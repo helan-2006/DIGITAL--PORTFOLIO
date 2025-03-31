@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle, #000428, #004e92);
+            color: white;
+            animation: bgAnimation 8s infinite alternate;
+        }
+        @keyframes bgAnimation {
+            0% { background: radial-gradient(circle, #000428, #004e92); }
+            100% { background: radial-gradient(circle, #1a2980, #26d0ce); }
+        }
+        nav {
+            position: fixed;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+        }
+        nav a {
+            color: cyan;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: lime;
+            text-shadow: 0 0 10px lime;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        img.profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid cyan;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px cyan;
+            transition: transform 0.5s;
+        }
+        img.profile-pic:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 25px lime;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <img src="helanphoto.jpg.jpeg" alt="Profile Picture" class="profile-pic">
+        <h2>About Me</h2>
+        <p>Hello! I'm HELAN U, Pursuing II BSc Computer Science.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>College:</strong> CTTE College for Women</li>
+            <li><strong>School:</strong> KRM Public School</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="index2.html" target="_blank">WEB PAGE</a></li>
+            <li><a href="index.html" target="_blank">DIGITAL PORTFOLIO</a></li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>JAVA</li>
+            <li>PYTHON</li>
+            <li>EXCEL</li>
+        </ul>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p><a href="HelanResume.pdf.PDF" target="_blank">Download My Resume</a></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:helanumapathy@gmail.com">helanumapathy@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/helan-umapathy-8445322b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/helan-2006" target="_blank">GitHub Profile</a></p>
+    </section>
+</body>
+</html>
